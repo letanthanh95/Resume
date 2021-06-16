@@ -27,7 +27,27 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
+    
+    <script type="text/javascript">
+      
+      function sendEmail() {
+        var email=document.getElementById('email').value;
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username : "ltthanh2103@gmail.com",
+          Password : "CB9EF7EE2F12EC4D7135CD890AC6A6673B14",
+          To : 'ltthanh2103@gmail.com',
+          From : email,
+          Subject : document.getElementById('msg_subject').value,
+          Body : document.getElementById('message').value,
+        })
+        .then(function(message){
+          alert("mail sent successfully")
+        }).catch(err=>{
+          console.log(err)
+        });
+      }
+    </script>
   </head>
   <body>
 
@@ -169,7 +189,7 @@
                 </ul>
               </div>
               <a href="assets/file/Resume-ThanhLe-SE.pdf" class="btn btn-common"><i class="icon-paper-clip"></i> SWE Resume</a>
-              <a href="#" class="btn btn-common"><i class="icon-paper-clip"></i> DS Resume</a>
+              <a href="assets/file/ResumeData-ThanhLe.pdf" class="btn btn-common"><i class="icon-paper-clip"></i> DS Resume</a>
               <a href="#" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
             </div>
           </div>   
@@ -590,7 +610,7 @@
             <div class="col-md-6 col-lg-6 col-sm-12">
               <div class="contact-block">
                 <h2>Contact Form</h2>
-                <form id="contactForm" action="mailto:ltthanh2103@gmail.com">
+                <form id="contactForm" method="post">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
@@ -616,7 +636,7 @@
                         <div class="help-block with-errors"></div>
                       </div>
                       <div class="submit-button">
-                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                        <button class="btn btn-common" id="submit" type="submit" onClick="sendEmail()">Send Message</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div> 
                         <div class="clearfix"></div> 
                       </div>
@@ -694,6 +714,7 @@
     </a>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
     <script src="assets/js/jquery-min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
