@@ -27,27 +27,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    
-    <script type="text/javascript">
-      
-      function sendEmail() {
-        var email=document.getElementById('email').value;
-        Email.send({
-          Host: "smtp.elasticemail.com",
-          Username : "ltthanh2103@gmail.com",
-          Password : "CB9EF7EE2F12EC4D7135CD890AC6A6673B14",
-          To : 'ltthanh2103@gmail.com',
-          From : email,
-          Subject : document.getElementById('msg_subject').value,
-          Body : document.getElementById('message').value,
-        })
-        .then(function(message){
-          alert("mail sent successfully")
-        }).catch(err=>{
-          console.log(err)
-        });
-      }
-    </script>
+   
   </head>
   <body>
 
@@ -94,11 +74,7 @@
                   Projects
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">
-                  Contact
-                </a>
-              </li>
+              
             </ul>
           </div>
         </div>
@@ -198,64 +174,6 @@
     </section>
     <!-- About Section End -->
 
-    <!-- Services Section Start -->
-    <!-- <section id="services" class="services section-padding">
-      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">What I do</h2>
-      <div class="container">
-        <div class="row"> -->
-          <!-- Services item -->
-          <!-- <div class="col-md-6 col-lg-3 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
-              <div class="icon">
-                <i class="icon-grid"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Front-end Development</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
-              </div>
-            </div>
-          </div> -->
-          <!-- Services item -->
-          <!-- <div class="col-md-6 col-lg-3 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
-              <div class="icon">
-                <i class="icon-layers"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Graphic Design</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
-              </div>
-            </div>
-          </div> -->
-          <!-- Services item -->
-          <!-- <div class="col-md-6 col-lg-3 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
-              <div class="icon">
-                <i class="icon-briefcase"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Business Branding</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
-              </div>
-            </div>
-          </div> -->
-          <!-- Services item -->
-          <!-- <div class="col-md-6 col-lg-3 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
-              <div class="icon">
-                <i class="icon-bubbles"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Consultancy</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- Services Section End -->
-
     <!-- Resume Section Start -->
     <div id="resume" class="section-padding">
       <div class="container">
@@ -273,7 +191,7 @@
                     
                     <span>2019 - 2021</span>
                     
-                      <p class="line-text">&#10004; Cumulative GPA: 3.55 - Named in Dean's List</p>
+                      <p class="line-text">&#10004; Cumulative GPA: 3.5 - Named in Dean's List</p>
                       <br/>
                       <p class="line-text">&#10004; Major GPA: 3.70 - Magma Cum Laude</p>
                       <br/>
@@ -337,8 +255,8 @@
                   <img style="width:45px" src="assets/img/python.png" alt="">
                 </div>
                 <div class="services-content">
-                  <h3><a href="#">Python Skill</a></h3>
-                  <p>Using Libraries for Data Ananlysis and Django Framework for Web Development</p>
+                  <h3><a href="#skills">Python</a></h3>
+                  <p>Use libraries for Data Ananlysis and Django Framework for Web Development</p>
                   <div class="meter">
                     <span style="width: 50%"></span>
                   </div>
@@ -354,7 +272,7 @@
                   <img style="width:45px" src="assets/img/javascript.png" alt="">
                 </div>
                 <div class="services-content">
-                  <h3><a href="#">JavaScript</a></h3>
+                  <h3><a href="#skills">JavaScript</a></h3>
                   <p>Love to use React JS for UI and functionalities</p>
                   <p>Node JS for Backend - API REST</p>
                   <div class="meter red">
@@ -372,7 +290,7 @@
                   <img style="width:45px" src="assets/img/c.png" alt="">
                 </div>
                 <div class="services-content">
-                  <h3><a href="#">Other Languages</a></h3>
+                  <h3><a href="#skills">Other Languages</a></h3>
                   <p>Knowledge the basic of C# with ASP.NET, C/C++, R.</p>
                   <p>HTML5/CSS and Bootstrap 5.</p>
                   <div class="meter animate">
@@ -389,8 +307,8 @@
                   <img style="width:45px" src="assets/img/compiler.png" alt="">
                 </div>
                 <div class="services-content">
-                  <h3><a href="#">IDLE Compilers</a></h3>
-                  <p>Visual studio Code, Pycharm, Jupyter, Google Colab, etc.</p>
+                  <h3><a href="#skills">IDLE Compilers</a></h3>
+                  <p>GIT Commands, VS Code, Pycharm, Jupyter, Google Colab.</p>
                   <p>Linux Environment</p>
                   <div class="meter orange nostripes">
                     <span style="width: 40%"></span>
@@ -560,125 +478,6 @@
     <!-- Portfolio Section Ends --> 
 
 
-
-    <!-- Counter Area Start-->
-    <!-- <section class="counter-section section-padding">
-      <div class="container">
-        <div class="row"> -->
-          <!-- Counter Item -->
-          <!-- <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.3s">
-              <div class="icon"><i class="icon-briefcase"></i></div>
-              <div class="counterUp">250</div>
-              <p>Project Working</p>
-            </div>
-          </div> -->
-          <!-- Counter Item -->
-          <!-- <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.6s">
-              <div class="icon"><i class="icon-check"></i></div>
-              <div class="counterUp">950</div>
-              <p>Project Done</p>
-            </div>
-          </div> -->
-          <!-- Counter Item -->
-          <!-- <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.9s">
-              <div class="icon"><i class="icon-diamond"></i></div>
-              <div class="counterUp">150</div>
-              <p>Awards Received</p>
-            </div>
-          </div> -->
-          <!-- Counter Item -->
-          <!-- <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="1.2s">
-              <div class="icon"><i class="icon-heart"></i></div>
-              <div class="counterUp">299</div>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- Counter Area End-->
-
-    <!-- Contact Section Start -->
-    <section id="contact" class="section-padding">      
-      <div class="contact-form">
-        <div class="container">
-          <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
-            <div class="col-md-6 col-lg-6 col-sm-12">
-              <div class="contact-block">
-                <h2>Contact Form</h2>
-                <form id="contactForm" method="post">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
-                        <div class="help-block with-errors"></div>
-                      </div>                                 
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
-                        <div class="help-block with-errors"></div>
-                      </div> 
-                    </div>
-                     <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group"> 
-                        <textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <div class="submit-button">
-                        <button class="btn btn-common" id="submit" type="submit" onClick="sendEmail()">Send Message</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
-                        <div class="clearfix"></div> 
-                      </div>
-                    </div>
-                  </div>            
-                </form>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-sm-12">
-              <div class="footer-right-area wow fadeIn">
-                <h2>Contact Address</h2>
-                <div class="footer-right-contact">
-                  <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-map-marker"></i>
-                    </div>
-                    <p>Missouri City, TX</p>
-                  </div>
-                  <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-envelope"></i>
-                    </div>
-                    <p><a href="mailto:ltthanh2103@gmail.com">ltthanh2103@gmail.com</a></p>
-                    <p><a href="mailto:ltthanh@uh.edu">ltthanh@uh.edu</a></p>
-                  </div>
-                  <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-phone"></i>
-                    </div>
-                    <p>+ (01) 832 771 7243</p>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-          </div>
-        </div>
-      </div>   
-    </section>
-    <!-- Contact Section End -->
-
     <!-- Footer Section Start -->
     <footer class="footer-area section-padding">
       <div class="container">
@@ -714,7 +513,7 @@
     </a>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+
     <script src="assets/js/jquery-min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
